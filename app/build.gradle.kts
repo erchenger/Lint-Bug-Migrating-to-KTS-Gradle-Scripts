@@ -23,10 +23,10 @@ android {
         }
     }
 
-    applicationVariants.all(object : Action<ApplicationVariant> {
-        override fun execute(variant: ApplicationVariant) {
+    android.applicationVariants.all {
+        this.outputs.forEach { output ->
         }
-    })
+    }
 }
 
 
